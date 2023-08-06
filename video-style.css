@@ -1,0 +1,34 @@
+.video-container {
+    width: 90vw;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+main{
+    height: 130vh;
+}
+
+iframe {
+    width: 30vw;
+    height: 25vh;
+}
+
+.last-el {
+    grid-column-start: 2;
+}
+footer{
+    height: 5vh;
+  }
+
+@media screen and (max-width: 600px) {
+    .video-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 90vw;
+    }
+}
